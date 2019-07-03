@@ -12,8 +12,7 @@
   tasks:
     - name: Pushing config ... please wait
       junos_install_config:
-        # host: "{{ junos_host }},{{ ansible_port }}"
-        console: "{{ junos_host }},{{ ansible_port }}"
+        host: "{{ junos_host }}"
         port: "{{ netconf_port }}"
         user: "{{ junos_ssh_user }}"
         passwd: "{{ junos_pwd_clear }}"
